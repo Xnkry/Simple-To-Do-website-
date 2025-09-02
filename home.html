@@ -21,18 +21,73 @@
 
     <body>
         <header>
-            <!-- place navbar here -->
-           <nav
-            class="nav justify-content-center  "
-           >
-            <a class="nav-link active" href="#" aria-current="page"
-                >Active link</a
+       <nav
+        class="navbar navbar-expand-sm navbar-light bg-light"
+       >
+        <div class="container">
+            <a class="navbar-brand" href="#">TodoSelf</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
             >
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link disabled" href="#">Disabled link</a>
-           </nav>
-           
-             
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home.html" aria-current="page"
+                            >Home
+                            <span class="visually-hidden">(current)</span></a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            id="dropdownId"
+                            data-bs-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Dropdown</a
+                        >
+                        <div
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownId"
+                        >
+                            <a class="dropdown-item" href="/task.html" target="_blank"
+                                >Your Work</a
+                            >
+                            <a class="dropdown-item disabled" href="#"
+                                >Lists</a
+                            >
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input
+                        class="form-control me-sm-2"
+                        type="text"
+                        placeholder="Search"
+                    />
+                    <button
+                        class="btn btn-outline-success my-2 my-sm-0"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+       </nav>
+       
         </header>
         <main></main>
         <footer>
