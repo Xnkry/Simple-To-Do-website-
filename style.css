@@ -1,0 +1,31 @@
+.libertinus-serif-display-regular {
+  font-family: "Libertinus Serif Display", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.my-5{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.carousel-item img {
+  object-fit: cover;     /* Makes sure images don’t stretch */
+  height: 60vh;          /* 60% of screen height (adjust as you like) */
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 30vh;       /* Smaller height on mobile */
+  }
+  
+}
+.carousel {
+  border: 1px solid #000000;   /* thinner border for small screens */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    border: 2px solid #030303;  /* adjust border size */
+    border-radius: 8px;
+  }
+}
