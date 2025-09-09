@@ -43,3 +43,19 @@ document.addEventListener("DOMContentLoaded", function () {
       `<i class="bi bi-arrow-return-right"></i> Hello, ${storedUsername}!`;
   }
 });
+// tasks
+const Textfield = document.getElementById("TextField");
+const Addtask = document.getElementById("AddTask");
+const TaskField = document.getElementById("Container")
+//REQUIRED
+Addtask.addEventListener("click",()=>{
+  if(Textfield.value.length==0){
+  alert("You must add a task!");
+}else{
+  const NewField = document.createElement("span");
+  NewField.className="d-flex justify-content-column"
+  NewField.innerHTML=[`<p>${Textfield.value}</p>`].join('');
+  TaskField.appendChild(NewField);
+
+}
+})
