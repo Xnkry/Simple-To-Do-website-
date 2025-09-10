@@ -58,7 +58,7 @@
                   >Dropdown</a
                 >
                 <div class="dropdown-menu" aria-labelledby="dropdownId">
-                  <a class="dropdown-item" href="#">Your Work</a>
+                  <a class="dropdown-item" href="/task.html">Your Work</a>
                   <a class="dropdown-item disabled" href="#">Lists</a>
                 </div>
               </li>
@@ -75,12 +75,13 @@
     </header>
 
     <main>
+      <div class="border my-5 bg-light">
       <div class="container my-2">
         <h1 class="display-6" id="HelloUser">
           <i class="bi bi-arrow-return-right"></i> Hello
         </h1>
       </div>
-      <div class="tasks my-3 d-flex justify-content-center" id="Container">
+      <div class="tasks my-3 d-flex justify-content-center">
         <input type="text" placeholder="Enter a Task" class="rounded-2 w-50" id="TextField" required>
         <div class="d-grid gap-2">
           <button
@@ -92,8 +93,11 @@
             Add a Task
           </button>
         </div>
-        
+        <p ></p>
       </div>
+
+      <div id="Container" class="task-container border p-2"></div>
+</div>
     </main>
 
     <footer>
